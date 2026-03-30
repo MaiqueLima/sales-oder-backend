@@ -1,0 +1,14 @@
+Associações 
+
+    Não pode estabelecer semanticamente uma hierarquia clara de pai e filho.
+    Você expõe as entidades de documento totalmente de forma independente.
+    Os relacionamentos provavelmente mudarão ao longo do tempo 
+    Entidades individuais devem ter ciclos de vida individuais
+
+Composições
+
+    Pai e filho compartilham um ciclo de vida
+    você pode estabelecer semanticamente uma hierarquia clara de pai e filho
+    você nunca expoe uma entidadde filha isoladamente
+    O pai de um item nunca mudarão
+    Você deseja manter as entidades juntas de forma transacional
