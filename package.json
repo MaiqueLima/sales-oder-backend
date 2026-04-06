@@ -4,7 +4,8 @@
   "description": "Welcome to your new CAP project.",
   "main": "index.js",
   "scripts": {
-    "start": "cds watch --in-memory"
+    "start": "cds serve",
+    "dev": "cds watch"
   },
   "repository": {
     "type": "git",
@@ -27,4 +28,3 @@
     "git-commit-msg-linter": "^5.0.8"
   }
 }
-
