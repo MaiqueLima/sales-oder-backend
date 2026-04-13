@@ -63,3 +63,27 @@ GET http://{{localhost}}/SalesOrderHeaders?$filter=totalAmount le 4397300542693
 Content-Type: application/json 
 
 ###
+
+#Expadindo os itens
+GET http://{{localhost}}/SalesOrderHeaders?$expand=items,customer
+Content-Type: application/json 
+
+###
+
+#Expadindo os produtos dentro dos itens - Necessario ser uma associação ou composicao entre os dois
+GET http://{{localhost}}/SalesOrderHeaders?$expand=items($expand=product),customer
+Content-Type: application/json 
+
+###
+
+#Uso do & para combinar filtros
+GET http://{{localhost}}/SalesOrderHeaders?$filter=totalAmount ge 20000&$expand=items($expand=product),customer
+Content-Type: application/json 
+
+###
+
+#Expadindo os produtos dentro dos itens com filtros
+GET http://{{localhost}}/SalesOrderHeaders?$filter=totalAmount ge 20000&$expand=items($expand=product;$filter=quantity le 30),customer
+Content-Type: application/json 
+
+###
