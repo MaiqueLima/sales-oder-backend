@@ -40,3 +40,10 @@ Content-Type: application/json
 }
 
 
+###
+
+GET http://{{localhost}}/Customers?$filter=endswith(firstName,'-27700650')
+Content-Type: application/json 
+
+###
+
