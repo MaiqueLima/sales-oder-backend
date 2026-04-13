@@ -1,0 +1,26 @@
+@localhost=localhost:4004/odata/v4/main
+@productId=f0718834-471e-4099-b1ff-0b6f9705a5d7
+
+GET http://{{localhost}}/Products
+Content-Type: application/json 
+
+###
+
+POST http://{{localhost}}/Products
+Content-Type: application/json 
+
+{
+    "id": "{{productId}}",
+    "name": "Coca-Cola",
+    "price": 2.99
+}
+
+# ---------------------------------------
+# entity Products {
+#     key id: UUID;
+#         name: String;
+#         price: Decimal(15,2);
+# }
+# ---------------------------------------
+
+###
