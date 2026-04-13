@@ -87,3 +87,9 @@ GET http://{{localhost}}/SalesOrderHeaders?$filter=totalAmount ge 20000&$expand=
 Content-Type: application/json 
 
 ###
+
+#Selecionar somente customer e id do sales order header
+GET http://{{localhost}}/SalesOrderHeaders?$select=id,customer&$expand=customer($select=email)
+Content-Type: application/json 
+
+###
