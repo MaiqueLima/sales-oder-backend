@@ -93,3 +93,15 @@ GET http://{{localhost}}/SalesOrderHeaders?$select=id,customer&$expand=customer(
 Content-Type: application/json 
 
 ###
+
+#Descobrindo quantidade de registros totais
+GET http://{{localhost}}/SalesOrderHeaders/$count
+Content-Type: application/json 
+
+###
+
+#Paginando os registros ( Skip / Top )
+GET http://{{localhost}}/SalesOrderHeaders?$skip=9&$top=5
+Content-Type: application/json 
+
+###
