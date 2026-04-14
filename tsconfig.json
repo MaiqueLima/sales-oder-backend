@@ -1,0 +1,19 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./srv/*"]
+    },
+    "rootDir": "./"
+  },
+  "include": ["srv"],
+  "exclude": ["node_modules"]
+}
