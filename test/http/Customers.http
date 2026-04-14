@@ -47,3 +47,10 @@ Content-Type: application/json
 
 ###
 
+# Buscando dados com o $Search
+
+GET http://{{localhost}}/Customers?$search=firstName
+Content-Type: application/json 
+
+###
+
