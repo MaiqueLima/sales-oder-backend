@@ -6,8 +6,7 @@
   "scripts": {
     "start": "cds serve ",
     "dev": "cds watch",
-    "debug": "DEBUG=db cds watch"
-
+    "debug": "DEBUG=db cds-tsx watch"
   },
   "repository": {
     "type": "git",
@@ -23,11 +22,13 @@
   "homepage": "https://github.com/MaiqueLima/sales-oder-backend#readme",
   "dependencies": {
     "@sap/cds": "^9.8.4",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "typescript": "^6.0.2"
   },
   "devDependencies": {
+    "@cap-js/cds-typer": "^0.38.0",
     "@sap/cds-dk": "^9.8.2",
-    "git-commit-msg-linter": "^5.0.8"
+    "git-commit-msg-linter": "^5.0.8",
+    "tsx": "^4.21.0"
   }
 }
-
