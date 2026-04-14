@@ -112,8 +112,8 @@ Content-Type: application/json
 
 ###
 
-#Buscando dados com o $Search com filter
-GET http://{{localhost}}/SalesOrderHeaders?$search=3l2uz&$filter=totalAmount ge 20000
+#Buscando dados com o $Search - Utilizando para todos os campos de VARCHAR, TEXT, STRING
+GET http://{{localhost}}/SalesOrderHeaders?$search=3l2uz
 Content-Type: application/json
 
 ###
